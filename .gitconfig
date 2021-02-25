@@ -1,0 +1,13 @@
+[user]
+	name = Xavier Haniquaut
+	email = xavier.haniquaut@gmail.com
+[push]
+	default = tracking
+	followTags = true
+[pull] 
+	rebase = preserve
+[status]
+	showUntrackedFiles = all
+[branch]
+	autosetuprebase = always
+
