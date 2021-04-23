@@ -1,4 +1,3 @@
-#!/bin/zsh 
 export VOLTA_HOME="$HOME/.volta"
 export PATH=$HOME/bin:/usr/local/bin:$VOLTA_HOME/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
