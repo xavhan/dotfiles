@@ -7,7 +7,7 @@ ZSH_THEME="robbyrussell"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UPDATE_PROMPT="true"
-export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=1
 
 
 plugins=(
