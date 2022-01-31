@@ -29,6 +29,10 @@ data.location=~/.task
 #include /usr/local/Cellar/task/2.5.3/share/doc/task/rc/solarized-light-256.theme
 #include /usr/local/Cellar/task/2.5.3/share/doc/task/rc/no-color.theme
 
-context.work=+work
-context.perso=+perso
-context=work
+news.version=2.6.0
+context.perso.read=+perso
+context.perso.write=+perso
+context.work.read=+work
+context.work.write=+work
+context.alices.read=project:Alices
+context.alices.write=project:Alices
