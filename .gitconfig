@@ -10,4 +10,5 @@
 	showUntrackedFiles = all
 [branch]
 	autosetuprebase = always
-
+[init]
+	defaultBranch = main
