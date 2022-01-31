@@ -1,0 +1,33 @@
+==> Formulae
+adr-tools       
+cloc
+fzf                         
+gh
+git            
+git-co-author
+jq            
+ranger
+speedtest-cli  
+task
+tldr
+translate-shell    
+wget
+
+==> Casks
+1password                               
+appcleaner
+boom-3d
+deepl
+font-fira-code
+font-iosevka
+google-chrome
+hyper
+imageoptim
+knox
+raycast
+runjs              
+skitch
+spotify
+tower
+visual-studio-code
+vlc
