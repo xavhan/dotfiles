@@ -17,7 +17,9 @@ wget
 1password                               
 appcleaner
 boom-3d
+cron
 deepl
+dropbox
 font-fira-code
 font-iosevka
 google-chrome
