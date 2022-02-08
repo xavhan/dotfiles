@@ -12,3 +12,6 @@
 	autosetuprebase = always
 [init]
 	defaultBranch = main
+# work overrides
+[includeIF "gitdir:~/dev/work/"]
+   	path = ~/work.gitconfig
