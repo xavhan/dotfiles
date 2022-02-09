@@ -5,7 +5,7 @@
 	default = tracking
 	followTags = true
 [pull] 
-	rebase = preserve
+	rebase = merges
 [status]
 	showUntrackedFiles = all
 [branch]
