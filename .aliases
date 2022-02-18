@@ -1,0 +1,28 @@
+alias reload="source $HOME/.zshrc"
+alias c="clear"
+alias r="clear && reload"
+
+alias bs="brew search"
+alias bi="brew install"
+
+alias gpub="git push --set-upstream origin $(git_current_branch)"
+alias gres="git diff --name-only --diff-filter=U | uniq | xargs code"
+alias gs="git show"
+alias gst="git status -sb"
+alias gfix="gcmsg fix"
+alias grhh1="git reset HEAD~1 --hard"
+alias gbD-="git branch -D @{-1}"
+
+alias ct="clear && task"
+alias tw="task add +work"
+alias tp="task add +perso"
+alias twork="task context work"
+alias tperso="task context perso"
+alias tres="task context none"
+
+alias cat="bat" # better cat
+
+# Work
+alias li="open -a Linear 'https://linear.app/zx-ventures/issue/$(git branch --show)'"
+alias lin=li
+alias linear=li

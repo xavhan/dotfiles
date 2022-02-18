@@ -4,7 +4,7 @@
 [push]
 	default = tracking
 	followTags = true
-[pull] 
+[pull]
 	rebase = merges
 [status]
 	showUntrackedFiles = all
@@ -12,6 +12,10 @@
 	autosetuprebase = always
 [init]
 	defaultBranch = main
+[help]
+	autocorrect = prompt
+[alias]
+	has = branch --contains
 # work overrides
 [includeIF "gitdir:~/dev/work/"]
    	path = ~/work.gitconfig
