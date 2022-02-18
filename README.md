@@ -5,7 +5,7 @@ Inspired from this article: https://dev.to/tgifelix/backup-your-dotfiles-with-ve
 
 Do not edit dotfiles included in this repo, those are backed up from my machines
 
-Install process (and copy my dotfiles)
+[NEED TO BE REFRESHED] Install process (and copy my dotfiles)
 --------------------------------------
 
 ```sh
@@ -17,6 +17,8 @@ cp dotfiles/.vimrc ~/.vimrc
 cp dotfiles/.taskrc ~/.taskrc
 cp dotfiles/.gitconfig ~/.gitconfig
 cp dotfiles/.zshrc ~/.zshrc
+cp dotfiles/.aliases ~/.aliases
+cp dotfiles/Brewfile ~/Brewfile
 ```
 
 Backup process
