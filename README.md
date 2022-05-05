@@ -11,7 +11,7 @@ Do not edit dotfiles included in this repo, those are backed up from my machines
 ```sh
 git clone xavhan/dotfiles
 # install the backup script
-cp dotfiles/backup_dotfiles.sh ~/automated-scripts/backup_dotfiles.sh
+cp dotfiles/backup_dotfiles.sh ~/backup_dotfiles.sh
 # beware that below is going to overide your dotfiles
 cp dotfiles/.vimrc ~/.vimrc
 cp dotfiles/.gitconfig ~/.gitconfig
@@ -25,5 +25,7 @@ Backup process
 --------------
 
 ```sh
-backup_dotfiles
+~/backup_dotfiles.sh <repo path>
+#
+~/backup_dotfiles.sh ~/dev/dotfiles
 ```
