@@ -14,14 +14,16 @@ git clone xavhan/dotfiles
 cp dotfiles/backup_dotfiles.sh ~/automated-scripts/backup_dotfiles.sh
 # beware that below is going to overide your dotfiles
 cp dotfiles/.vimrc ~/.vimrc
-cp dotfiles/.taskrc ~/.taskrc
 cp dotfiles/.gitconfig ~/.gitconfig
+cp dotfiles/work.gitconfig ~/work.gitconfig
 cp dotfiles/.zshrc ~/.zshrc
-cp dotfiles/.aliases ~/.aliases
+cp dotfiles/.aliases.sh ~/.aliases.sh
 cp dotfiles/Brewfile ~/Brewfile
 ```
 
 Backup process
 --------------
 
-Call the backup script when you want with the `dotsave` alias (see `.zshrc`)
+```sh
+backup_dotfiles
+```

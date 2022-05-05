@@ -1,4 +1,4 @@
-DOTFILES_FOLDER=~/dotfiles
+DOTFILES_FOLDER="$1"
 cd $DOTFILES_FOLDER
 
 # create a timestamp alias for the commit message
@@ -10,12 +10,12 @@ repo() {
 }
 
 # files to backup
-cp    ~/.taskrc $DOTFILES_FOLDER
-cp    ~/.gitconfig $DOTFILES_FOLDER
-cp    ~/.zshrc $DOTFILES_FOLDER
-cp    ~/.vimrc $DOTFILES_FOLDER
-# backup the script itself
-cp    ~/automated-scripts/backup_dotfiles.sh $DOTFILES_FOLDER
+cp ~/.vimrc $DOTFILES_FOLDER
+cp ~/.gitconfig $DOTFILES_FOLDER
+cp ~/work.gitconfig $DOTFILES_FOLDER
+cp ~/.zshrc $DOTFILES_FOLDER
+cp ~/.aliases.sh $DOTFILES_FOLDER
+cp ~/Brewfile $DOTFILES_FOLDER
 
 # pull & push
 if [[ `git status --porcelain` ]]; then

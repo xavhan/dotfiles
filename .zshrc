@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
 
@@ -9,6 +11,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="spaceship"
 
 COMPLETION_WAITING_DOTS="true"
+HOMEBREW_NO_ENV_HINTS="false"
 
 plugins=(
     brew
@@ -22,7 +25,32 @@ source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
 
-source ~/.aliases
+source ~/.aliases.sh
+
+eval "$(fnm env --use-on-cd)"
 
 # show task on start to avoid procrastinate
-task
+# task
+
+#compdef gt
+###-begin-gt-completions-###
+#
+# yargs command completion script
+#
+# Installation: /opt/homebrew/bin/gt completion >> ~/.zshrc
+#    or /opt/homebrew/bin/gt completion >> ~/.zsh_profile on OSX.
+#
+_gt_yargs_completions()
+{
+  local reply
+  local si=$IFS
+  IFS=$'
+' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" /opt/homebrew/bin/gt --get-yargs-completions "${words[@]}"))
+  IFS=$si
+  _describe 'values' reply
+}
+compdef _gt_yargs_completions gt
+###-end-gt-completions-###
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"

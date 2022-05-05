@@ -16,6 +16,10 @@
 	autocorrect = prompt
 [alias]
 	has = branch --contains
+	dm = log origin/master..HEAD --oneline --no-merges
+	dms = log origin/master..origin/staging --oneline --no-merges
+[blame]
+	ignoreRevsFile = .git-blame-ignore-revs
 # work overrides
 [includeIF "gitdir:~/dev/work/"]
    	path = ~/work.gitconfig
