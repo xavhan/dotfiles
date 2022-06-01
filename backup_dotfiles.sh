@@ -15,6 +15,7 @@ cp ~/.gitconfig $DOTFILES_FOLDER
 cp ~/work.gitconfig $DOTFILES_FOLDER
 cp ~/.zshrc $DOTFILES_FOLDER
 cp ~/.aliases.sh $DOTFILES_FOLDER
+brew bundle dump --force
 cp ~/Brewfile $DOTFILES_FOLDER
 
 # pull & push
