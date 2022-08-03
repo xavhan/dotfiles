@@ -5,6 +5,7 @@ alias r="clear && reload"
 alias bs="brew search"
 alias bi="brew install"
 
+alias gmc="git merge --continue"
 alias gpub="git push --set-upstream origin $(git_current_branch)"
 alias gres="git diff --name-only --diff-filter=U | uniq | xargs code"
 alias gs="git show"

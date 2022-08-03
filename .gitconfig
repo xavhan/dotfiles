@@ -23,3 +23,5 @@
 # work overrides
 [includeIF "gitdir:~/dev/work/"]
    	path = ~/work.gitconfig
+[core]
+	pager = less -F -X
