@@ -33,6 +33,8 @@ alias gitconfig="vim ~/.gitconfig"
 
 alias ws="yarn workspace"
 
+alias $="" # help copy paste snippets ;)
+
 # Work
 alias chromatic="open -a Google\ Chrome 'https://www.chromatic.com/build?appId=61af1f14829b1e003adaeea8'"
 alias staging_reset="gco master && git pull && gco staging && git reset --hard origin/master && gpf"
