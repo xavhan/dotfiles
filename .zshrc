@@ -15,6 +15,8 @@ ZSH_THEME="spaceship"
 COMPLETION_WAITING_DOTS="true"
 HOMEBREW_NO_ENV_HINTS="false"
 
+HISTORY_IGNORE="(ls|cd|pwd|exit|cd ..|..|...)"
+
 plugins=(
     brew
     git
@@ -31,17 +33,6 @@ source ~/.aliases.sh
 
 eval "$(fnm env --use-on-cd)"
 
-# show task on start to avoid procrastinate
-# task
-
-#compdef gt
-###-begin-gt-completions-###
-#
-# yargs command completion script
-#
-# Installation: /opt/homebrew/bin/gt completion >> ~/.zshrc
-#    or /opt/homebrew/bin/gt completion >> ~/.zprofile on OSX.
-#
 _gt_yargs_completions()
 {
   local reply
@@ -52,7 +43,6 @@ _gt_yargs_completions()
   _describe 'values' reply
 }
 compdef _gt_yargs_completions gt
-###-end-gt-completions-###
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

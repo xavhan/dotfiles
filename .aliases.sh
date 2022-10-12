@@ -39,4 +39,5 @@ alias $="" # help copy paste snippets ;)
 alias chromatic="open -a Google\ Chrome 'https://www.chromatic.com/build?appId=61af1f14829b1e003adaeea8'"
 alias staging_reset="gco master && git pull && gco staging && git reset --hard origin/master && gpf"
 alias asktom="gh pr edit --add-reviewer tbekaert"
-
+alias review_everybody="gh pr edit --add-reviewer tbekaert,FalconPilot,kriffin,njbraesch,JonathanGuldemont,constantlahousse"
+alias staging_cherrypick="git sha | pbcopy && gco staging && git pull && gcp $(pbpaste) && gp"

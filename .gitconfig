@@ -18,6 +18,7 @@
 	has = branch --contains
 	dm = log origin/master..HEAD --oneline --no-merges
 	dms = log origin/master..origin/staging --oneline --no-merges
+	sha = rev-parse HEAD
 # [blame]
 	# ignoreRevsFile = .git-blame-ignore-revs
 # work overrides
