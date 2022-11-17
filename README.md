@@ -37,6 +37,9 @@ cp dotfiles/Brewfile ~/Brewfile
 cd ~
 brew bundle
 
+# zsh as default shell
+chsh -s /usr/local/bin/zsh
+
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
