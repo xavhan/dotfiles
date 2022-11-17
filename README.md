@@ -9,7 +9,9 @@ Do not edit dotfiles included in this repo, those are backed up from my machines
 --------------------------------------
 
 ```sh
-git clone xavhan/dotfiles
+mkdir dev
+cd dev
+git clone https://github.com/xavhan/dotfiles
 # install the backup script
 cp dotfiles/backup_dotfiles.sh ~/backup_dotfiles.sh
 # beware that below is going to overide your dotfiles
@@ -19,6 +21,8 @@ cp dotfiles/work.gitconfig ~/work.gitconfig
 cp dotfiles/.zshrc ~/.zshrc
 cp dotfiles/.aliases.sh ~/.aliases.sh
 cp dotfiles/Brewfile ~/Brewfile
+cd ~
+brew bundle
 ```
 
 Backup process
