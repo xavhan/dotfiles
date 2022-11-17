@@ -36,6 +36,9 @@ cp dotfiles/Brewfile ~/Brewfile
 # start the install process
 cd ~
 brew bundle
+
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 Backup process
