@@ -24,5 +24,3 @@
 # work overrides
 [includeIF "gitdir:~/dev/work/"]
    	path = ~/work.gitconfig
-[diff]
-	external = difft

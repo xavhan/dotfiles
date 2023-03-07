@@ -16,6 +16,9 @@ alias grhh1="git reset HEAD~1 --hard"
 alias gbD-="git branch -D @{-1}"
 alias gbclean='git fetch -p && git branch -vv | awk "/: gone]/{print \$1}" | xargs git branch -D'
 alias gcblank='git commit -m "empty commit" --allow-empty'
+alias gdd="gd dev"
+
+alias gdpr="gdd --name-only | xargs code"
 
 alias ct="clear && task"
 alias tw="task add +work"
@@ -36,8 +39,16 @@ alias ws="yarn workspace"
 alias $="" # help copy paste snippets ;)
 
 # Work
-alias chromatic="open -a Google\ Chrome 'https://www.chromatic.com/build?appId=61af1f14829b1e003adaeea8'"
-alias staging_reset="gco master && git pull && gco staging && git reset --hard origin/master && gpf"
-alias asktom="gh pr edit --add-reviewer tbekaert"
-alias review_everybody="gh pr edit --add-reviewer tbekaert,FalconPilot,kriffin,njbraesch,JonathanGuldemont,constantlahousse"
-alias staging_cherrypick="git sha | pbcopy && gco staging && git pull && gcp $(pbpaste) && gp"
+BASTIEN=Dollab
+QUENTIN=quentin-tardivon
+JAN=jpochyla
+ARTHUR=Platane
+alias review_bastien="gh pr edit --add-reviewer $BASTIEN"
+alias review_quentin="gh pr edit --add-reviewer $QUENTIN"
+alias review_jan="gh pr edit --add-reviewer $JAN"
+alias review_arthur="gh pr edit --add-reviewer $ARTHUR"
+alias review_everybody="gh pr edit --add-reviewer $BASTIEN,$QUENTIN,$JAN,$ARTHUR"
+
+function forget() {                                                              
+   history -d $(expr $(history | tail -n 1 | grep -oP '^\s*\d+') - 1);              
+}

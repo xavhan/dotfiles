@@ -10,7 +10,8 @@ export ZSH=$HOME/.oh-my-zsh
 export LESS="-RFX"
 
 # install: https://github.com/spaceship-prompt/spaceship-prompt
-ZSH_THEME="spaceship"
+source "$HOME/.zsh/spaceship/spaceship.zsh"
+
 
 COMPLETION_WAITING_DOTS="true"
 HOMEBREW_NO_ENV_HINTS="false"
@@ -22,6 +23,7 @@ plugins=(
     git
     gh
     z
+    yarn
     taskwarrior
 )
 
